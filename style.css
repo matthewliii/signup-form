@@ -1,0 +1,15 @@
+body {
+    display: flex;
+    height: 100vh;
+}
+#test {
+    font-size: 50px;
+}
+#sideBar {
+    background-image: url("halie-west-25xggax4bSA-unsplash.jpg");
+}
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

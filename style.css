@@ -1,15 +1,130 @@
+
 body {
     display: flex;
     height: 100vh;
+    margin: 0px;
+    background-color: lightgray;
 }
 #test {
     font-size: 50px;
 }
 #sideBar {
     background-image: url("halie-west-25xggax4bSA-unsplash.jpg");
+    flex: 1 1 40vw;
 }
 #content {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex: 1 1 60vw;
+    flex-wrap: wrap;
+}
+
+#content h1 {
+    font-size: 30px;
+    font-weight: normal;
+    margin: 5px 30px;
+}
+
+#content h4 {
+    font-size: 15px;
+    font-weight: normal;
+    margin: 5px 30px;
+}
+
+#form {
+    flex-wrap: wrap;
+    margin: 30px 0px;
+    box-shadow: 10px black;
+    padding: 10px 30px;
+    font-size: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+#create {
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+    padding: 20px 10px;
+    color: white;
+    background-color: #596D48;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0px 30px 30px 30px;
+}
+
+fieldset {
+    border: none;
+    padding: 0px;
+}
+
+label {
+    color: #686a6e;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+label, input {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 200px;
+    margin: 5px 2px;
+}
+
+input {
+    padding: 3px;
+    font-size: 15px;
+}
+
+input:focus {
+    border-color: blue;
+    box-shadow: 1px 1px 3px 4px lightgrey;
+}
+
+#odinLogo {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 20vh;
+    margin: 150px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url(Norse-Bold.otf);
+}
+
+#odinLogo h3 {
+    align-self: center;
+    font-family: 'Norse-Bold';
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+    font-size: 100px;
+}
+
+#odinLogo img {
+    width: 7vw;
+}
+
+.italicized {
+    font-style: italic;
+}
+
+#already {
+    font-weight: 1000;
+}
+
+a {
+    text-decoration: none;
+    color: #596D48;
+}
+
+.error {
+    border-color: red;
 }

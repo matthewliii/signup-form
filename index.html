@@ -8,28 +8,39 @@
     <title>Sign Up Form</title>
 </head>
 <body>
-    <div id="sideBar"> fjdsklfjlajsdflk</div>
-    <div id="content">
-        This is not a real online service! You know you need something liek this in your life to help you realize your deepest dreams. Sign up now to get started.
-
-        You know you want to.
-
-        <form action="example.com/path" method="post">
-            <label for="firstName">FIRST NAME</label>
-            <input type="text" id="firstName" name="firstName">
-            <label for="lastName">LAST NAME</label>
-            <input type="text" id="lastName" name="lastName">
-            <label for="email">EMAIL</label>
-            <input type="email" id="email" name="email">
-            <label for="phoneNumber">PHONE NUMBER</label>
-            <input type="text" id="phoneNumber" name="phoneNumber">
-            <label for="password">PASSWORD</label>
-            <input type="password" id="password" name="password">
-            <label for="confirmPassword">CONFIRM PASSWORD</label>
-            <input type="text" id="confirmPassword" name="confirmPassword">
-        </form>
-        <button type="submit">Create Account</button>
-        Already have an account? <span><a href="loginPage">Log in</a></span>
+    <div id="sideBar">
+        <div id="odinLogo">
+            <img src="odin-logo.png">
+            <h3>ODIN</h3>
+        </div>
     </div>
+    <div id="content">
+        <h1>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <span class="italicized">now</span> to get started.</h1>
+        <h1>You <span class="italicized"> know</span> you want to.</h1>
+
+        <form id="form" action="example.com/path" method="post">
+            <fieldset>
+                <legend>Let's do this!</legend>
+                <label for="firstName">FIRST NAME</label>
+                <input type="text" id="firstName" name="firstName">
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" name="email">
+                <label for="password">PASSWORD</label>
+                <input type="password" id="password"  name="password">
+            </fieldset>
+            
+            <fieldset>
+                <label for="lastName">LAST NAME</label>
+                <input type="text" id="lastName" name="lastName">
+                <label for="phoneNumber">PHONE NUMBER</label>
+                <input type="text" id="phoneNumber" name="phoneNumber">
+                <label for="confirmPassword">CONFIRM PASSWORD</label>
+                <input type="password" id="confirmPassword"  name="confirmPassword">
+            </fieldset>
+        </form>
+        <button id="create" type="submit">Create Account</button>
+        <h4 id="already">Already have an account? <a href="loginPage">Log in</a></h4>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
